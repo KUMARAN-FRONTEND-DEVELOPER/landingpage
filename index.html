@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skin Care Landing Page</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/491e9e0991.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="bluebox">
+    <div>
+      <h1>LOGO</h1>
+    </div>
+    <div>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Product</a></li>
+        <li><a href="#">Service</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <i class="fa-solid fa-cart-shopping"></i>
+    </div>
+  </div>
+  <div class="primary" >
+    <h1>Get <span>Glow</span> With Higher <span class="Sk" >Skin Tone</span></h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta delectus molestiae inventore voluptates, fugiat reiciendis, ratione expedita, cupiditate sapiente non doloremque quis impedit ex nemo rerum. Quidem eligendi impedit beatae.</p>
+  </div>
+  <div class="secondary" >
+    <div class="client">
+      <img src="Images/Airbnb-Logo.svg" alt="Air Bnb">
+      <img src="Images/GitHub-Logo.svg" alt="Github">
+      <img class="amazon" src="Images/Amazon-Logo.svg" alt="Amazon">
+      <img src="Images/Facebook-Logo.svg" alt="Facebook">
+    </div>
+    <div class="products-Section">
+      <div class="product product-1">Product-1
+        <img src="Images/Ingredients_0d0895e1-70a1-4e17-bcb4-77aa9fb0d6e9_1066x.webp" alt="">
+        <button>Add to Cart</button>
+      </div>
+      <div class="product product-2">Product-2
+        <img src="Images/ingredients_9d784171-ad23-4355-b95d-ea9082e1674d_1066x.webp" alt="">
+        <button>Add to Cart</button>
+      </div>
+      <div class="product product-3">Product-3
+        <img src="Images/ingredinets_1_1066x.webp" alt="">
+        <button>Add to Cart</button>
+      </div>
+      <div class="product product-4">Product-3
+        <img src="Images/product_-ingredients.webp" alt="">
+        <button>Add to Cart</button>
+      </div>
+    </div>
+  </div>
+  <div class="footer-Section" >
+    <div class="footer">
+      <h1>LOGO</h1>
+      <div>
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="">Products</a></li>
+          <li><a href="">Services</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+      </div>
+      <div class="subscribe" >
+        <input type="text" id="u_mail" >
+        <label for="u_mail">Subscribe</label>
+      </div>
+    </div>
+  </div>
+</body>
+<script>
+let prevScroll = window.pageYOffset;
+window.onscroll = ()=>{
+let currentScroll = window.pageYOffset;
+  if (prevScroll < currentScroll) {
+    document.querySelector('.bluebox').classList.add('bluebox-hide')
+} else {
+  document.querySelector('.bluebox').classList.remove('bluebox-hide')
+}
+prevScroll = currentScroll;
+}
+
+
+</script>
+</html>
